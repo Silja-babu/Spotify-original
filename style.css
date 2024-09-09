@@ -1,0 +1,653 @@
+@font-face{
+    font-family: 'bold';
+    src:url(/Spotify/Font/SpotifyMixUI-Bold.woff2);
+}
+@font-face{
+    font-family: 'regular';
+    src: url(/Spotify/Font/SpotifyMixUI-Regular.woff2);
+}
+@font-face{
+    font-family: 'title';
+    src: url(/Spotify/Font/SpotifyMixUITitleVariable.woff2);
+}
+
+
+
+*{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background: black;
+    color: white;
+
+    
+}
+body, html{
+    overflow-x: hidden;
+margin: 0;
+width: 100%;
+color: #b3b3b3;
+}
+.header{display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.centre{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    
+}
+.menu{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 98px;
+    padding: 1.5px 10px;
+    background: #303030;
+
+}
+.searchs{
+    width: 30px;
+    background: #303030;
+
+}
+.centre svg{
+    background: #303030;
+
+}
+.home{
+    width: 30px;
+   
+    
+}
+.menubar input{background: #303030;
+border: none;}
+.menubar{background: #303030;}
+.home svg{
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+.backet{
+    background: #303030;
+    width: 30px;
+}
+.aside{
+    display: flex;
+    width: 100%;
+    max-width: 150px;
+    align-items: center;
+    
+    
+}
+.spotify {
+    width: 72px;
+    margin-right: 32%;
+    margin-left: 27px;
+    margin-top: 9px;
+    
+    
+}
+.search{
+    width: 50px;
+}
+.threelines{
+    width: 30px;
+    
+}
+.mainbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+}
+.mainbar a{
+    text-decoration: none;
+}
+.log {
+    border: 2px solid ;
+    text-align: center;
+    border-radius: 888px;
+    background: white;
+    padding: 8px 32px;
+    
+    }
+.log a{
+    background: white;
+    color: black;
+    font-family: 'bold';
+}
+
+
+
+
+
+
+
+/*sidebar*/
+.lineicon{
+    width: 20px;
+    background:rgb(19, 18, 18);
+}
+.lineicon svg{
+    background:rgb(19, 18, 18);
+}
+.plusicon{
+    width: 15px;
+    background:rgb(19, 18, 18);
+}
+.plusicon svg{
+    background:rgb(19, 18, 18);
+}
+.inputtext{
+    background:rgb(19, 18, 18);
+}
+.yourlibrary{
+    display: flex;
+    align-items: center;
+    background:rgb(19, 18, 18);
+}
+.inputtext ::placeholder{
+    color: #b3b3b3;
+    font-family: 'regular';
+    font-size: 16px;
+    font-weight: 900;
+    background:rgb(19, 18, 18);
+    border: none;
+
+}
+.inputtext input{
+    border: none;
+    margin-left: 12px;
+    background:rgb(19, 18, 18);
+}
+.library{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 370px;
+    margin-bottom: 20px;
+    background:rgb(19, 18, 18);
+    
+    
+}
+.firstplaylist{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    text-align: left;
+    border: 2px solid transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-position: fixed;
+    background: rgb(43, 42, 42);
+    border-radius: 9px;
+    
+}
+h3,p{
+    background: rgb(43, 42, 42);
+}
+h3{
+    font-family: 'bold';
+    font-size: 16px;
+} 
+p{
+    font-family: 'regular';
+    font-size: 14px;
+}
+.podcast{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    text-align: left;
+    border: 2px solid transparent;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-position: fixed;
+    background: rgb(43, 42, 42);
+    border-radius: 9px;
+}
+
+button{
+    width: 100%;
+    max-width: fit-content;
+    border: none;
+    border: 2px solid white;
+    padding: 5px 15px;
+    color: black;
+    background: white;
+    border-radius: 888px;
+    margin-top: 20px;
+    font-family: 'bold';
+}
+.global{
+    width: 15px;
+    background:rgb(19, 18, 18);
+}
+.global svg{background:rgb(19, 18, 18);}
+.globalenglish{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: 0.2px solid grey;
+    width: max-content;
+    padding: 5px 16px;
+    border-radius: 888px;
+    background:rgb(19, 18, 18);
+}
+.globalenglish >div{
+    background:rgb(19, 18, 18);
+}
+.baselist{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+    font-size: 12px;
+    background:rgb(19, 18, 18);
+    
+    
+}
+.legal >div{
+    background:rgb(19, 18, 18);
+}
+.legal{
+    display: flex;
+    background:rgb(19, 18, 18);
+}
+.ads{
+    display: flex;
+    background:rgb(19, 18, 18);
+}
+.ads >div{
+    background:rgb(19, 18, 18);
+}
+.cookies >div{
+    background:rgb(19, 18, 18);
+}
+.firstsection{
+    display: flex;
+    flex-direction: column;
+    background:rgb(19, 18, 18);
+}
+.totalsection{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 20px;
+    top: 0;
+    bottom: 0;
+    height: 79.6vh;
+    border-radius: 9px;
+    border: 2px solid transparent;
+    background:rgb(19, 18, 18);
+    width: 379px;
+}
+
+
+
+
+
+
+
+
+
+.sidebar{
+    display: flex;
+    padding: 10px;
+    
+   
+}
+
+.scrollpart >div{
+    background:rgb(19, 18, 18);
+}
+.scrollpart h2{background:rgb(19, 18, 18);}
+
+.scrollpart h4{background:rgb(19, 18, 18);}
+.scrollpart img{background:rgb(19, 18, 18);}
+
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    background:rgb(19, 18, 18);
+}
+.artist img{
+    width: 160px;
+    height: 15vh;
+    
+   
+}
+.artist >div{
+    background:rgb(19, 18, 18);
+}
+.popular >div{
+    background:rgb(19, 18, 18);
+}
+.charts >div{background:rgb(19, 18, 18);}
+.artist{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+   overflow: hidden;
+}
+.album img{
+    width: 160px;
+    height: 15vh;
+}
+.album{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: hidden;
+    
+    
+}
+.radio{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: hidden;
+}
+.radio img{
+    width: 160px;
+    height: 15vh;
+}
+.charts img{
+    width: 180px;
+    height: 15vh;
+}
+.charts{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+.plalist{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: hidden;
+}
+.plalist img{
+    width: 160px;
+    height: 15vh;
+}
+.Trending{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: hidden;
+}
+.Trending img{
+    width: 180px;
+    height: 15vh;
+}
+.popular h4{
+    background:rgb(19, 18, 18) ;
+}
+.popular img{
+    background:rgb(19, 18, 18)
+}
+.popular{
+    background:rgb(19, 18, 18)
+}
+
+
+
+
+
+
+
+
+footer{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(to right, #cf1698, rgb(121, 121, 216)); 
+    color: white; 
+    padding: 18px;
+    
+}
+footer p{
+    font-size: 18px;
+    background: linear-gradient(to right, #cf1698, rgb(121, 121, 216));
+}          
+footer h3, footer p{
+    background: #cf1698; 
+    
+
+}
+footer button{
+    margin-left: 700px;
+    margin-top: -5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    
+}
+.button{
+    background: linear-gradient(to right, #cf1698, rgb(121, 121, 216)); 
+}
+.base{
+    display: flex;
+    gap: 20px;
+ }
+ .Company{
+    display: flex;
+    flex-direction: column;
+ }
+ .Company a{
+    text-decoration: none;
+ }
+ .social{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    
+ }
+ .social svg{
+    width: 20px;
+
+ }
+
+
+
+/*min 1200px mediaqueries*/
+
+@media(min-width:1200px){
+     .artist img{
+        border: 2px solid transparent;
+        border-radius: 50%;
+        height: 20vh;
+        width: 200px;
+        overflow-x: hidden;
+        
+     }
+     .artist{
+        gap: 25px;
+        
+     }
+     .album img{
+        border: 2px solid transparent;
+        height: 20vh;
+        width: 200px;
+
+     }
+     .album{
+        gap: 22px;
+        
+     }
+     .radio img{
+        border: 2px solid transparent;
+        height: 20vh;
+        width: 200px;
+
+     }
+     .radio{
+        gap: 22px;
+     }
+     .charts img{
+        border: 2px solid transparent;
+        height: 20vh;
+        width: 200px;
+     }
+     .plalist img{
+        border: 2px solid transparent;
+        height: 20vh;
+        width: 200px;
+     }
+     .plalist{
+        gap: 21px;
+     }
+     .Trending img{
+        border: 2px solid;
+        height: 20vh;
+        width: 200px;
+     }
+     .Trending{
+        gap: 20px;
+     }
+     .popular h2{
+        font-family: 'bold';
+        padding-top: 20px;
+
+     }
+     .popular h4{
+        font-family: 'regular';
+        font-weight: 100;
+        font-size: 16px;
+        width: 200px;
+        text-align: left;
+        overflow:hidden ;
+        overflow-wrap: break-word;
+     }
+     .artist{
+        margin-bottom: 85px;
+     }
+     
+     .scrollpart{
+        margin-left: 10px;
+        background:rgb(19, 18, 18);
+        top: 0;
+        bottom: 0;
+        height: 79.9vh;
+        border-radius: 9px;
+        border: 2px solid transparent;
+        background:rgb(19, 18, 18);
+        padding: 8px 32px;
+        border-radius: 9px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        overflow-y: auto;
+        white-space: nowrap;
+        scroll-snap-type:y mandatory;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .charts{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+@media(max-width:960px){
+    .centre{
+        display:none;
+    }
+    .mainbar{
+        display: none;
+    }
+    .aside{
+        display: flex;
+        align-items: center;
+        margin-left: 40%;
+    }
+    .openapp{
+        border: 2px solid white;
+        text-align: center;
+        padding: 4px 4px 4px 4px;
+        border-radius: 988px;
+        background: white;
+       
+        
+    }
+   .openapp a{text-decoration: none;
+    background: white;
+    color: black;
+}
+.totalsection{
+    display: none;
+}
+footer{
+    display: none;
+}
+.artist{
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.album{
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.radio{
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.charts{overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;}
+
+
+.plalist{
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.Trending{overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;}
+    .popular h4{
+        overflow: hidden;
+        width: 170px;
+    }
+    .scrollpart{
+        margin:0;
+        background:rgb(19, 18, 18);
+        top: 0;
+        bottom: 0;
+    }
+}
