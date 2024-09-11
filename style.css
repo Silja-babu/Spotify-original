@@ -125,8 +125,8 @@ body, html{
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 200px;
-    margin-right: 30px;
+    max-width: 180px;
+    margin-right: 32px;
 }
 .mainbar a{
     text-decoration: none;
@@ -136,15 +136,21 @@ body, html{
     text-align: center;
     border-radius: 888px;
     background: white;
-    padding: 10px 3px;
+    padding: 11px 16px;
     
     }
 .log a{
     background: white;
     color: black;
     font-family: 'bold';
+    
 }
-
+.sign a{
+    font-family: 'bold';
+    color: grey;
+    font-size: 16px;
+    margin-left: -16px;
+}
 
 
 
@@ -153,18 +159,21 @@ body, html{
 
 /*sidebar*/
 .lineicon{
-    width: 20px;
+    width: 26px;
     background:rgb(19, 18, 18);
+  
 }
 .lineicon svg{
     background:rgb(19, 18, 18);
 }
 .plusicon{
-    width: 15px;
+    width: 17px;
     background:rgb(19, 18, 18);
+    
 }
 .plusicon svg{
     background:rgb(19, 18, 18);
+    
 }
 .inputtext{
     background:rgb(19, 18, 18);
@@ -173,6 +182,7 @@ body, html{
     display: flex;
     align-items: center;
     background:rgb(19, 18, 18);
+    
 }
 .inputtext ::placeholder{
     color: #b3b3b3;
@@ -192,8 +202,9 @@ body, html{
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 370px;
-    margin-bottom: 50px;
+    max-width: 372px;
+    margin-bottom: 21px;
+    padding: 10px;
     background:rgb(19, 18, 18);
     
     
@@ -201,10 +212,10 @@ body, html{
 .firstplaylist{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 357px;
     text-align: left;
     border: 2px solid transparent;
-    padding: 20px;
+    padding: 20px 20px 13px 20px;
     margin-bottom: 25px;
     background-position: fixed;
     background: rgb(43, 42, 42);
@@ -217,6 +228,7 @@ body, html{
 .totalsection h3{
     font-family: 'bold';
     font-size: 16px;
+    margin-bottom: 5px;
 } 
 .totalsection p{
     font-family: 'regular';
@@ -225,10 +237,10 @@ body, html{
 .podcast{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 357px;
     text-align: left;
     border: 2px solid transparent;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     margin-bottom: 10px;
     background-position: fixed;
     background: rgb(43, 42, 42);
@@ -248,10 +260,21 @@ body, html{
     font-family: 'bold';
 }
 .global{
-    width: 15px;
+    width: 20px;
+    align-items: center;
     background:rgb(19, 18, 18);
 }
-.global svg{background:rgb(19, 18, 18);}
+.global svg{background:rgb(19, 18, 18);
+    align-items: center;
+    margin-top: 5px;
+    
+}
+.eng{
+    margin-left: 4px;
+    font-family: 'bold';
+    font-size: 14px;
+    align-items: center;
+}
 .globalenglish{
     display: flex;
     align-items: center;
@@ -261,12 +284,13 @@ body, html{
     padding: 5px 16px;
     border-radius: 888px;
     background:rgb(19, 18, 18);
+    margin-top: 20px;
 }
 .globalenglish >div{
     background:rgb(19, 18, 18);
 }
 .baselist{
-    
+    padding: 1px 1px 10px 10px;
     display: flex;
     flex-direction: column;
     background:rgb(19, 18, 18);
@@ -316,10 +340,10 @@ body, html{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 10px 20px;
-    top: 0;
+    padding: 10px 29px 15px 7px;
+    margin-top: -10px;
     bottom: 0;
-    height: 79.6vh;
+    height: 82vh;
     border-radius: 9px;
     border: 2px solid transparent;
     background:rgb(19, 18, 18);
@@ -392,6 +416,9 @@ body, html{
     
     
 }
+.radios h2{
+    margin-top: 40px;
+}
 .radio{
     display: flex;
     flex-direction: row;
@@ -448,27 +475,34 @@ body, html{
     font-family: 'bold';
     padding-bottom: 20px;
 }
-
+.popular p{
+    font-family: 'regular';
+    width: 200px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 
 
 
 footer{
-    margin-left: 4px;
-    width: 98.6%;
+     
     background: linear-gradient(to right, #cf1698, rgb(121, 121, 216));
     padding: 10px;
+    
 }
 footer .preview{
     background: linear-gradient(to right, #cf1698, rgb(121, 121, 216));
 }
 .footer{
-   max-height: 20vh;
+    height:auto ;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    max-width: 2800px;
+    max-width: 3800px;
     color: white; 
     background: linear-gradient(to right, #6616cf, rgb(121, 121, 216));
     
@@ -477,12 +511,18 @@ footer .preview{
 .preview{
     width: 850%;
 }
+footer{
+    margin-top: 0%;
+    margin-left: 9px;
+    width: 99%;
+    
+}
 .footer button{
     width: 100%;
     max-width: max-content;
     justify-content: right;
     border: 2px solid white;
-    padding: 8px 20px;
+    padding: 8px 25px;
     border-radius: 98px;
     background: white;
     color: black;
@@ -518,6 +558,14 @@ footer button{
     background:rgb(19, 18, 18);
     padding: 10px;
 
+ }
+ .Company h3{
+    font-family: 'bold';
+    font-size: 16px;
+ }
+ .Company a{
+    font-family: 'regular';
+    font-size: 14px;
  }
  .Company{
     display: flex;
@@ -569,27 +617,58 @@ footer button{
 
 /*min 1200px mediaqueries*/
 
+@media(max-width:1520px){
+    .footer{
+        max-width: 100px;
+    }
+    .preview{
+        width: 500%;
+    }
+}
+
+@media(max-width:1700px){
+    .footer{
+        max-width: 1600px;
+    }
+}
+@media(max-width:1244px){
+    .menu{
+        max-width: 380px;
+    }
+}
+@media(max-width:1073px){
+    .menu{
+        max-width:330px;
+    }
+}
 @media(min-width:990px){
+    .scrollpart{
+        overflow-x: hidden;
+    }
      .artist img{
         border: 2px solid transparent;
         border-radius: 50%;
-        height: 20vh;
-        width: 200px;
+        height: 21vh;
+        width: 205px;
         overflow-x: hidden;
+        margin-left: -1%;
+        margin-top: 5px;
         
      }
+     
      .artist{
-        gap: 25px;
+        gap: 20px;
         
      }
      .album img{
         border: 2px solid transparent;
-        height: 20vh;
-        width: 200px;
+        
+        width: 205px;
 
      }
      .album{
         gap: 22px;
+        
         
      }
      .radio img{
@@ -624,8 +703,16 @@ footer button{
      }
      .popular h2{
         font-family: 'bold';
-        padding-top: 20px;
+        padding-top: 10px;
 
+     }
+     .album img{
+        border: 2px solid transparent;
+        height: 21.5vh;
+        border-radius: 9px;
+     }
+     .albums h2{
+        margin-top: -50px;
      }
      .popular h4{
         font-family: 'regular';
@@ -640,17 +727,32 @@ footer button{
      .artist{
         margin-bottom: 85px;
      }
-     
+     .popular p{
+        display: flex;
+        color: grey;
+        overflow-x: hidden;
+     }
+     .radio h4{
+        display: none;
+     }
+     .charts h4{
+        display: none;
+     }
+     .plalist h4{
+        display: none;
+     }
      .scrollpart{
         margin-left: 10px;
+        margin-top: -10px;
+        margin-bottom: 2px;
         background:rgb(19, 18, 18);
         top: 0;
         bottom: 0;
-        height: 79.9vh;
+        height: 82.5vh;
         border-radius: 9px;
         border: 2px solid transparent;
         background:rgb(19, 18, 18);
-        padding: 8px 32px;
+        padding: 12px 1px 7px 20px;
         border-radius: 9px;
         display: flex;
         gap: 10px;
@@ -690,7 +792,9 @@ footer button{
     }
     .hiddenfooter{display: none;}
 
-
+    .social{
+        gap: 20px;
+    }
 
 
 
@@ -716,6 +820,9 @@ footer button{
     }
     .search{
         width: 15px;
+    }
+    .popular p{
+        display:none
     }
     .aside{
         display: flex;
@@ -802,6 +909,12 @@ footer{
         overflow: hidden;
         width: 170px;
     }
+    .plalist h4{
+        display: flex;
+    }
+    .plalist p{
+        display: none;
+    }
     .scrollpart{
         margin:0;
         background:rgb(19, 18, 18);
@@ -880,7 +993,7 @@ footer{
 }
 @media(max-width:700px){
     .spotify{
-        width: 120px;
+        width: 80px;
     }
     .aside{
         margin-left: -20px;
