@@ -1,14 +1,14 @@
 @font-face{
     font-family: 'bold';
-    src:url(/Spotify/Font/SpotifyMixUI-Bold.woff2);
+    src:url(Font/SpotifyMixUI-Bold.woff2);
 }
 @font-face{
     font-family: 'regular';
-    src: url(/Spotify/Font/SpotifyMixUI-Regular.woff2);
+    src: url(Font/SpotifyMixUI-Regular.woff2);
 }
 @font-face{
     font-family: 'title';
-    src: url(/Spotify/Font/SpotifyMixUITitleVariable.woff2);
+    src: url(Font/SpotifyMixUITitleVariable.woff2);
 }
 
 
